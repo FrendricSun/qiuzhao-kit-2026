@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>2026秋招AI求职冲刺包｜19.9元拿下求职全流程外挂</title>
+<meta name="description" content="AI提示词引擎×52、面试高频50题、单页简历模板、群面生存指南、Offer谈判话术、求职进度追踪表。秋招网申高峰期，用对方法比多投50家公司有用。">
+<style>
+  :root{
+    --navy:#14274E; --navy2:#1F3A6E; --ink:#1c2333;
+    --yellow:#FFC53D; --orange:#E8590C; --bg:#F5F7FB; --line:#E4E9F2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px}
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px}
+  section{margin:28px 0}
+  h2{font-size:22px;line-height:1.4;margin-bottom:6px}
+  .h2sub{color:#6b7688;font-size:14px;margin-bottom:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:12px;box-shadow:0 2px 10px rgba(20,39,78,.04)}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,#14274E 0%,#1F3A6E 60%,#274a8f 100%);color:#fff;padding:44px 0 56px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,197,61,.12)}
+  .badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#FFE9A8;font-size:13px;padding:3px 12px;border-radius:999px;margin-bottom:14px;letter-spacing:1px}
+  .hero h1{font-size:30px;line-height:1.35;font-weight:800}
+  .hero h1 em{font-style:normal;color:var(--yellow)}
+  .hero p.lead{color:#c6d2ea;font-size:15px;margin-top:12px}
+  .stat{display:flex;gap:0;margin-top:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;overflow:hidden}
+  .stat div{flex:1;text-align:center;padding:12px 4px}
+  .stat div+div{border-left:1px solid rgba(255,255,255,.14)}
+  .stat b{display:block;font-size:20px;color:var(--yellow)}
+  .stat span{font-size:12px;color:#c6d2ea}
+
+  /* pain */
+  .pain{display:flex;gap:10px}
+  .pain .p{flex:1;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 12px;font-size:13.5px;text-align:center}
+  .pain .p b{display:block;font-size:26px;margin-bottom:2px}
+
+  /* contents */
+  .item{display:flex;gap:14px;align-items:flex-start}
+  .item .no{flex:none;width:34px;height:34px;border-radius:10px;background:var(--navy);color:var(--yellow);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .item b{font-size:16px}
+  .item small{display:block;color:#6b7688;font-size:13.5px;margin-top:2px}
+  .tag{display:inline-block;font-size:11px;color:var(--orange);border:1px solid #f3c4ad;background:#fdf1ea;border-radius:6px;padding:0 6px;margin-left:6px;vertical-align:2px}
+
+  /* fit */
+  .fit{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .fit .card{margin:0;padding:16px}
+  .fit h3{font-size:15px;margin-bottom:8px}
+  .fit ul{list-style:none;font-size:13.5px;color:#4a5568}
+  .fit li{padding-left:18px;position:relative;margin:3px 0}
+  .fit .yes li::before{content:"✓";position:absolute;left:0;color:#2f9e44;font-weight:700}
+  .fit .no li::before{content:"×";position:absolute;left:0;color:#c92a2a;font-weight:700}
+
+  /* price */
+  .pricebox{background:linear-gradient(160deg,#14274E,#1F3A6E);border-radius:20px;color:#fff;padding:26px 22px;text-align:center}
+  .pricebox .was{color:#93a5c9;text-decoration:line-through;font-size:15px}
+  .pricebox .now{font-size:52px;font-weight:900;color:var(--yellow);line-height:1.1;margin:2px 0}
+  .pricebox .now i{font-style:normal;font-size:24px;font-weight:700}
+  .pricebox .promise{font-size:13px;color:#c6d2ea;margin-top:8px}
+
+  /* steps */
+  .steps{counter-reset:s}
+  .step{position:relative;padding-left:44px;margin-bottom:14px}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--yellow);color:var(--navy);font-weight:800;display:flex;align-items:center;justify-content:center}
+  .step b{font-size:15.5px}
+  .step small{display:block;color:#6b7688;font-size:13px}
+
+  /* QR */
+  .qr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .qr .card{margin:0;text-align:center;padding:16px}
+  .qr img{width:100%;max-width:190px;border-radius:10px;display:block;margin:0 auto}
+  .qrbox{width:100%;max-width:190px;height:190px;margin:0 auto;border:2px dashed #b9c4d8;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#8a97ad;font-size:13px;background:#fafbfd}
+  .qr b{display:block;font-size:14px;margin-top:10px}
+  .qr small{color:#6b7688;font-size:12px}
+
+  /* faq */
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+  summary{font-weight:600;font-size:15px;cursor:pointer}
+  details p{font-size:13.5px;color:#4a5568;margin-top:8px}
+
+  .cta{position:sticky;bottom:0;left:0;right:0;background:rgba(245,247,251,.92);backdrop-filter:blur(8px);padding:10px 0 14px;border-top:1px solid var(--line);z-index:9}
+  .cta .btn{display:block;background:var(--orange);color:#fff;text-align:center;font-size:17px;font-weight:800;padding:14px;border-radius:14px;text-decoration:none;box-shadow:0 6px 16px rgba(232,89,12,.35)}
+  .cta .btn small{display:block;font-size:12px;font-weight:400;opacity:.85}
+  footer{text-align:center;color:#93a0b5;font-size:12px;padding:24px 0 90px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="badge">2026 秋招特别版 · 9月更新</span>
+    <h1>网申高峰已至，<br>把 <em>AI</em> 变成你的求职外挂</h1>
+    <p class="lead">别人还在海投，你已经用 AI 改完第 5 版简历、做完第 3 轮模拟面试。求职是信息战，不是体力战。</p>
+    <div class="stat">
+      <div><b>52条</b><span>AI提示词</span></div>
+      <div><b>50题</b><span>面试题库</span></div>
+      <div><b>6+1件</b><span>全套资料</span></div>
+      <div><b>19.9元</b><span>一杯奶茶钱</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>现在的你，是不是这样？</h2>
+  <p class="h2sub">秋招时间窗口就这么多，每一个低效动作都在吃掉你的机会</p>
+  <div class="pain">
+    <div class="p"><b>😰</b>简历投了几十家<br>全是已读不回</div>
+    <div class="p"><b>😶‍🌫️</b>面试一被追问<br>大脑当场空白</div>
+    <div class="p"><b>😵</b>群面插不上话<br>全程当背景板</div>
+  </div>
+</section>
+
+<section>
+  <h2>这套资料包，一次配齐全流程</h2>
+  <p class="h2sub">从改简历到谈薪签字，每个环节给你能直接抄的作业</p>
+  <div class="card"><div class="item"><div class="no">1</div><div><b>AI求职提示词引擎<span class="tag">核心</span></b><small>52条即复制即用：STAR量化改简历、JD匹配度分析、AI扮演面试官模拟追问、群面推演、谈薪压价模拟。不是普通提示词合集，是带追问机制的训练系统。</small></div></div></div>
+  <div class="card"><div class="item"><div class="no">2</div><div><b>面试高频50题与回答框架</b><small>自我认知/经历深挖/情景压力/求职动机/反问环节，每题讲透考察意图+回答框架+示范开头，高危题标注追问点。</small></div></div></div>
+  <div class="card"><div class="item"><div class="no">3</div><div><b>单页简历模板 ×3</b><small>互联网产品 / 运营市场 / 技术研发三个方向，A4单页排版，含填写示例，Word直接改。</small></div></div></div>
+  <div class="card"><div class="item"><div class="no">4</div><div><b>群面生存指南</b><small>5种角色怎么选、8种局面怎么接话、3大经典题型完整破题演示，附赛前检查清单。</small></div></div></div>
+  <div class="card"><div class="item"><div class="no">5</div><div><b>Offer谈判话术手册</b><small>期望薪资怎么报、手里有offer怎么用、口头offer确认清单、多offer量化决策矩阵、三方违约流程避坑。</small></div></div></div>
+  <div class="card"><div class="item"><div class="no">6</div><div><b>求职进度追踪表</b><small>投递看板（Excel）+ 9-12月秋招关键时间线，几十家公司投递不再混乱。</small></div></div></div>
+  <div class="card"><div class="item"><div class="no">＋</div><div><b>持续更新服务</b><small>秋招季内内容免费更新，购后可提问，陪你打完这一仗。</small></div></div></div>
+</section>
+
+<section>
+  <h2>适合谁 / 不适合谁</h2>
+  <p class="h2sub">说实话，不适合就别买，省下的钱去买杯奶茶</p>
+  <div class="fit">
+    <div class="card yes"><h3>✅ 适合你，如果你是</h3><ul>
+      <li>2026/2027届应届生</li>
+      <li>简历回复率低，想系统性改</li>
+      <li>面试会紧张、缺实战演练</li>
+      <li>想用AI提效但不会写提示词</li>
+    </ul></div>
+    <div class="card no"><h3>❌ 不适合，如果你</h3><ul>
+      <li>指望买了就自动拿offer</li>
+      <li>从不打开资料只图心理安慰</li>
+      <li>需要一对一内推保过服务</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>怎么拿到手？三步，五分钟</h2>
+  <div class="card" style="counter-reset:s">
+    <div class="step"><b>扫码付款 19.9 元</b><small>微信或支付宝均可，备注"秋招"</small></div>
+    <div class="step"><b>添加微信好友</b><small>出示付款截图，备注及时通过</small></div>
+    <div class="step"><b>秒收全套资料</b><small>打包发送，附使用顺序说明，有问题可随时问</small></div>
+  </div>
+</section>
+
+<section>
+  <div class="pricebox">
+    <div class="was">单独找齐这些资料：至少 99 元</div>
+    <div class="now"><i>￥</i>19.9</div>
+    <div class="promise">不到两杯奶茶钱 · 一次付费持续更新 · 资料永久有效</div>
+  </div>
+</section>
+
+<section>
+  <div class="qr">
+    <div class="card">
+      <img src="qr-pay.png" alt="收款码" onerror="this.outerHTML='<div class=qrbox>收款码图片位<br>（qr-pay.png）</div>'">
+      <b>微信 / 支付宝 收款码</b>
+      <small>付款备注"秋招"</small>
+    </div>
+    <div class="card">
+      <img src="qr-wechat.png" alt="微信二维码" onerror="this.outerHTML='<div class=qrbox>微信二维码图片位<br>（qr-wechat.png）</div>'">
+      <b>添加微信</b>
+      <small>出示付款截图秒发包</small>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>你可能想问</h2>
+  <details open><summary>资料是什么形式？怎么交付？</summary><p>文档+Word简历模板+Excel表格，打包后微信直接发送，手机电脑都能看，购后永久有效。付款后五分钟内发货，晚了你来找我。</p></details>
+  <details><summary>网上免费的资料那么多，为什么要买？</summary><p>免费资料的问题不是"没有"而是"太散"：几百个收藏夹吃灰，质量参差还互相矛盾。这套包把秋招全流程整理成一条线，提示词可直接复制使用，你省下的是筛选和试错的时间——秋招最贵的就是时间。</p></details>
+  <details><summary>能保证我拿到offer吗？</summary><p>不能，任何人这么承诺都是在骗你。这套资料提供的是方法和训练系统，帮你把准备效率提上来，执行靠你自己。这也是为什么我们明确写了"不适合只想买安慰的人"。</p></details>
+  <details><summary>买了之后能退吗？</summary><p>虚拟资料一经发送不退换，介意慎拍。但对内容有任何使用问题，随时微信上问，我们都答。</p></details>
+  <details><summary>现在买会不会太早/太晚？</summary><p>9月正是正式批网申高峰，提前批补录和笔试季马上开始，11月还有部分公司批次。现在开始系统准备，时间刚刚好；再拖，就是把机会让给别人。</p></details>
+</section>
+
+</div>
+
+<div class="cta"><div class="wrap"><a class="btn" href="#top" onclick="window.scrollTo({top:document.body.scrollHeight*0.62,behavior:'smooth'});return false;">￥19.9 立即拿下全套<small>扫码付款 → 加微信 → 秒发包</small></a></div></div>
+
+<footer>
+  2026秋招AI求职冲刺包 · 内容持续更新<br>
+  本页面为学习资料销售页，不承诺任何录用结果；请理性消费。<br>
+  虚拟商品，发货后不退换。
+</footer>
+
+</body>
+</html>
